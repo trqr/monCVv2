@@ -4,7 +4,8 @@
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #1e2b66;
-    font-size: 14px;
+    font-size: 12px;
+    text-align: justify;
 }
 
 header {
@@ -18,7 +19,7 @@ body {
 
 
 .title {
-    padding: 0.8em 1.8em;
+    padding: .8em 1.8em;
     border: 2px solid #1e2b66;
     position: relative;
     overflow: hidden;
@@ -32,6 +33,7 @@ body {
     transition: .3s;
     z-index: 1;
     font-family: inherit;
+    font-weight: 700;
     color: #1e2b66;
 }
 
@@ -59,8 +61,10 @@ body {
 
 .subtitle {
     border-top: 1px solid #1e2b66;
-    margin-top: 5px;
+    margin-top: auto;
     padding-top: 5px;
+    text-align: center;
+    font-size: 14px;
 }
 
 .title:hover .subtitle {
@@ -77,6 +81,7 @@ body {
 
 .left-sidebar {
     width: 37%;
+    HEIGHT: 100%;
     float: left;
     padding: 10px;
     padding-top: 0px;
@@ -85,7 +90,7 @@ body {
     z-index: -2;
 }
 
-.right-sidebar {   
+.right-sidebar {
     padding: 10px;
     padding-top: 0px;
     float: right;
@@ -96,13 +101,13 @@ body {
 .photo-container {
     margin-top: 20px;
     margin-bottom: 20px;
-    align-items: center;
-    justify-content: center;
-    float: left;
 }
 
 .scan-me {
     position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     width: auto;
     height: auto;
     border-radius: 10px;
@@ -110,38 +115,44 @@ body {
     color: #000000;
     font-size: larger;
     transition: 0.5s ease;
-    z-index: 3;
     opacity: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    z-index: 2;
 }
 
+.photo-container {
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 70%;
+}
 
 .photo-container:hover .scan-me {
     opacity: 1;
-
 }
 
 .photo-container:hover .githubqr {
     opacity: 0.2;
-
 }
 
 .githubqr {
     border-radius: 10px;
     border: 3px ridge #1e2b66;
     box-shadow: 4px 3px 3px #1e2b66;
-    width: 55%;
+    width: 100%;
     height: auto;
+    display: block;
+    z-index: 1;
+    justify-content: center;
+    align-items: center;
 }
 
 
 .title2 {
-    font-size: 17px;
+    font-size: 15px;
+    font-weight: 600;
     background: transparent;
+    padding-bottom: 5px;
     border: none;
-    padding: 10px 20px;
     color: #1e2b66;
     text-transform: uppercase;
     position: relative;
@@ -199,4 +210,15 @@ li {
 
 .box {
     margin: 30px 10px 10px 10px;
+    padding: 10px;
+}
+
+.box:hover {
+    background-color: #f1f1f1;
+    border: 1px solid #1e2b66;
+    transition: 0.7s ease;
+}
+
+.box:active {
+    scale: 0.95;
 }
