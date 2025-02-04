@@ -222,3 +222,7 @@ li {
 .box:active {
     scale: 0.95;
 }
+
+.centres-interet {
+    justify-content: left;
+}
