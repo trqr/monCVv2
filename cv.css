@@ -88,6 +88,7 @@ body {
     border: 1px solid #dcdcdc;
     background-color: #dcdcdc;
     z-index: -2;
+    padding-bottom: 34px;
 }
 
 .right-sidebar {
@@ -95,7 +96,6 @@ body {
     padding-top: 0px;
     float: right;
     width: 63%;
-
 }
 
 .photo-container {
@@ -225,4 +225,8 @@ li {
 
 .centres-interet {
     justify-content: left;
+}
+
+.right-sidebar .box {
+    margin: 1px;
 }
